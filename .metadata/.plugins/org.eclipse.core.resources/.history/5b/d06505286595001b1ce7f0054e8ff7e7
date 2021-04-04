@@ -1,0 +1,21 @@
+package com.example;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("mainApp")
+public class MainApp {
+	
+	@Autowired
+	private AppDelegate appDel;
+	
+	@GetMapping("/schoolName")
+	public String loadStudent(String schoolName) {
+		return appDel.callService(schoolName);
+		
+	}
+
+}

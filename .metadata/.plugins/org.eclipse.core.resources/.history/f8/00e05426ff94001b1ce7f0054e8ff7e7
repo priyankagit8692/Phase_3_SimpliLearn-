@@ -1,0 +1,39 @@
+package com.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.model.User;
+import com.repo.MyRepo;
+
+@Service
+public class UserService {
+	
+	@Autowired
+	private MyRepo repo;
+	
+	ArrayList<User> al = new ArrayList<User>();
+	
+	public boolean loginValid(String name,String password) {
+		if(name.equals("admin") && password.equals("manager")) {
+			return true;
+		}
+		return false;
+	}
+	
+	public void addUser(String name,String password,String email,String mobile) {
+		//al.add(new User(name, password, email, mobile));
+		repo.save(new User(name, password, email, mobile));
+		//System.out.println(al);
+		
+	}
+	
+	public List<User> loadUsers(){
+		List<User> list = (List)repo.findAll();
+		return list;
+	}
+
+}

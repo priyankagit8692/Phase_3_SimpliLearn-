@@ -1,0 +1,15 @@
+package com.example.MVCSpringSL;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/myapp")
+public class MyApp {
+	
+	public String sayWelcome() {
+		return "welcom priyanka to the Simpli learn";
+	}
+	
+
+}

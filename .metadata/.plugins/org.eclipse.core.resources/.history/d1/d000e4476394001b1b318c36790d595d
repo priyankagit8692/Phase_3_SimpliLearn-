@@ -1,0 +1,26 @@
+package com.example.MVCSpringSL;
+
+import java.util.ArrayList;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class UserService {
+	
+
+	ArrayList<User> al = new ArrayList<User>();
+	
+	public boolean loginValid(String name,String password) {
+		if(name.equals("admin") && password.equals("manager")) {
+			return true;
+		}
+		return false;
+	}
+	
+	public void addUser(String name,String password,String email,String mobile) {
+		al.add(new User(name, password, email, mobile));
+		System.out.println(al);
+		
+	}
+
+}

@@ -1,0 +1,6 @@
+package com.app;
+
+public interface Welcome {
+	public String sayWelcome(String name);
+	public void Hello(String name);
+}

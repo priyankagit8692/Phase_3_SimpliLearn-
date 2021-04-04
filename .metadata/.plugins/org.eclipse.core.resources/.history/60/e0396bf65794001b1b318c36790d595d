@@ -1,0 +1,68 @@
+package com.example.MVCSpringSL;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+@Controller
+@RequestMapping("/myapp")
+public class MyApp {
+	
+	ArrayList<User> list = new ArrayList<User>();
+	/*
+ 	@RequestMapping(value="/welcome",method=RequestMethod.GET) 
+	@ResponseBody()
+	public String sayWelcome() {
+		return "welcome priyanka to the Simpli learn";
+	}
+	
+	@RequestMapping(value="/login",method=RequestMethod.GET)
+	@ResponseBody()
+	public String sayLogin() {
+		return "welcome to login";
+	}
+	
+	@RequestMapping(value="/register",method=RequestMethod.GET)
+	@ResponseBody()
+	public String sayRegister() {
+		return "welcome to Registration";
+	}*/
+	
+	@RequestMapping(value="/login",method=RequestMethod.GET)
+	public String sayLogin() {
+		return "login";
+	}
+	
+	@RequestMapping(value="/login",method=RequestMethod.POST)
+	@ResponseBody
+	public String loginValid(@RequestParam("uname") String name,@RequestParam("pass") String password) {
+		
+		if(name.equals("admin") && password.equals("manager")) {
+			return "login success";
+		}
+		return "login failure";
+		
+	}
+	
+	@RequestMapping(value="/register",method=RequestMethod.GET)
+	public String sayRegister() {
+		return "register";
+	}
+	
+	@RequestMapping(value="/register",method=RequestMethod.POST)
+	@ResponseBody
+	public List<String> register(@RequestParam("uname") String name,@RequestParam("pass") String password,@RequestParam("mail") String
+			email,@RequestParam("mobileno") String mobile) {
+		
+		list.add(new User(name, password, email, mobile));
+		System.out.println(list);
+		return list;
+	}
+	
+
+}

@@ -1,0 +1,16 @@
+package com.aop;
+
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.springframework.stereotype.Component;
+
+@Component
+@Aspect
+public class MyAspect {
+ 
+	@Before("execution(* com.app.Welcome.sayWelcome(..)")
+	public void callBefore() {
+		System.out.println("call it before");
+	}
+	
+}

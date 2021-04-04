@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;myspringSL&apos;" deleteContents="true" description="Delete resource &apos;myspringSL&apos;" element1="/myspringSL" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1616400820879"/>&#x0A;<refactoring comment="Rename resource &apos;springSLSol&apos; to &apos;mySpringSL&apos;" description="Rename resource &apos;springSLSol&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/springSLSol" name="mySpringSL" stamp="1616400830973" updateReferences="true"/>
+</session>

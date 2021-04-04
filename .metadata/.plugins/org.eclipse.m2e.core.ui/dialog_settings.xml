@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="E:\simpliLearLiveClass_phase3\SimpliLearn_Backup\Phase 3\Code Example of LiveClasses\workspace_phase3_20And21March\myspringcrud"/>
+			<item value="E:\simpliLearLiveClass_phase3\SimpliLearn_Backup\Phase 3\Code Example of LiveClasses\workspace_phase3_20And21March\springbootCRUD"/>
+			<item value="E:\simpliLearLiveClass_phase3\SimpliLearn_Backup\Phase 3\Code Example of LiveClasses\workspace_phase3_20And21March\MVCSpringSL"/>
+			<item value="E:\simpliLearLiveClass_phase3\SimpliLearn_Backup\Phase 3\Code Example of LiveClasses\workspace_phase3_20And21March\PankajPhase3AOP"/>
+			<item value="E:\simpliLearLiveClass_phase3\SimpliLearn_Backup\Phase 3\Code Example of LiveClasses\workspace_phase3_20And21March\springSL"/>
+			<item value="E:\simpliLearLiveClass_phase3\SimpliLearn_Backup\Phase 3\Code Example of LiveClasses\workspace_phase3_6Mar_2021\springSL"/>
+			<item value="E:\simpliLearLiveClass_phase3\SimpliLearn_Backup\Phase 3\Code Example of LiveClasses\workspace_phase3_6Mar_2021\myspringSL"/>
+			<item value="E:\simpliLearLiveClass_phase3\SimpliLearn_Backup\Phase 3\Code Example of LiveClasses\Project\springSL"/>
+			<item value="E:\simpliLearLiveClass_phase3\SimpliLearn_Backup\Phase 3\Code Example of LiveClasses\Project\myspringSL"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>
